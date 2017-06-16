@@ -1,0 +1,23 @@
+{
+  "name": "wolfsbane",
+  "version": "0.0.0",
+  "description": "Personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "nunjucks"
+  ],
+  "author": "ksankar",
+  "license": "ISC",
+  "dependencies": {
+    "consolidate": "^0.14.5",
+    "express": "^4.15.2",
+    "node-sass": "^4.5.2",
+    "node-sass-middleware": "^0.11.0",
+    "nunjucks": "^3.0.0"
+  }
+}
