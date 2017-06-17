@@ -22,16 +22,14 @@ body {
   text-align: center;
   z-index: 99;
   cursor: pointer; }
+  .intro .title {
+    font-size: 70px !important;
+    font-family: 'VT323', monospace; }
+  .intro .sub-title {
+    font-size: 18px; }
 
 .intro:hover + #particles-js {
   transform: scale(1.5); }
-
-.title {
-  font-size: 70px;
-  font-family: 'VT323', monospace; }
-
-.sub-title {
-  font-size: 18px; }
 
 a {
   text-decoration: none;
@@ -53,7 +51,8 @@ a:hover {
   margin: 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: aqua; }
+  color: aqua;
+  font-family: 'VT323', monospace; }
 
 .page .desc {
   font-size: 0.95em;
@@ -66,14 +65,16 @@ a:hover {
   text-align: justify; }
 
 @media screen and (max-width: 40em) {
-  .page .header {
-    padding: 50px 20px 1em; }
-  .page .title {
-    font-size: 1.8em; } }
+  .page {
+    overflow-y: auto !important; }
+    .page .header {
+      padding: 50px 20px 1em; }
+    .page .title {
+      font-size: 1.8em; } }
 
 /* -- custom page colors -- */
 #page-skills {
-  background-color: #f57c00; }
+  background-color: #FF6F00; }
 
 #page-experiance {
   background-color: #004d40; }
@@ -83,3 +84,58 @@ a:hover {
 
 #page-projects {
   background-color: palevioletred; }
+
+#page-about {
+  background-color: teal; }
+
+/* -- experiance timeline -- */
+.timeline {
+  margin: 2px auto; }
+  .timeline .tl-item {
+    padding: 1em 2em;
+    color: rgba(255, 255, 255, 0.9);
+    border-left: 1px solid aqua;
+    position: relative; }
+    .timeline .tl-item h1 {
+      font-size: 2rem; }
+    .timeline .tl-item p {
+      font-size: 1rem; }
+    .timeline .tl-item::before {
+      content: attr(tl-title);
+      position: absolute;
+      left: 1em;
+      font-weight: bold;
+      top: 1.25em;
+      display: block;
+      font-weight: 700;
+      font-size: .75rem; }
+    .timeline .tl-item::after {
+      width: 10px;
+      height: 10px;
+      display: block;
+      top: 1em;
+      position: absolute;
+      left: -5.56px;
+      border-radius: 10px;
+      content: '';
+      border: 1px solid aqua;
+      background: #004d40; }
+
+/* -- skill stack animation -- */
+.skill-cloud {
+  transition: all 1.5s ease-in; }
+
+.skill-cloud:hover {
+  transform: scale(1.5) rotate(360deg); }
+
+/* -- social icons -- */
+.social-ico {
+  width: 32px;
+  height: 32px; }
+
+.social-ico:hover {
+  webkit-filter: drop-shadow(8px 8px 10px rebeccapurple);
+  filter: drop-shadow(1px 1px 1px rebeccapurple); }
+
+/* -- media queries -- */
+/* Larger than mobile screen */

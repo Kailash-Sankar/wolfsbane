@@ -24,21 +24,20 @@ body {
   text-align: center;
   z-index:99;
   cursor: pointer;
+
+  .title {
+    font-size:70px !important;
+    font-family: 'VT323', monospace;
+  }
+
+  .sub-title {
+    font-size:18px;
+  }
 }
 
 .intro:hover + #particles-js {
   transform: scale(1.5);
 }
-
-.title {
-  font-size:70px;
-  font-family: 'VT323', monospace;
-}
-
-.sub-title {
-  font-size:18px;
-}
-
 
 a {
   text-decoration: none;
@@ -53,6 +52,7 @@ a:hover {
 /* -- page styles -- */
 
 .page {
+
   .header {
     padding: 6em 10vw 2em;
     color: #fff;
@@ -66,6 +66,7 @@ a:hover {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: aqua;
+    font-family: 'VT323', monospace;
   }
 
   .desc {
@@ -84,6 +85,7 @@ a:hover {
 
 @media screen and (max-width: 40em) {
   .page {
+      overflow-y: auto !important;
     .header {
       padding: 50px 20px 1em;
     }
@@ -96,7 +98,7 @@ a:hover {
 
 /* -- custom page colors -- */
 #page-skills {
-  background-color: #f57c00;
+  background-color: #FF6F00;
 }
 
 #page-experiance {
@@ -109,4 +111,86 @@ a:hover {
 
 #page-projects {
   background-color: palevioletred;
+}
+
+#page-about {
+  background-color: teal;
+}
+
+
+/* -- experiance timeline -- */
+
+.timeline {
+  margin:2px auto;
+
+  .tl-item {
+    padding:1em 2em;
+    color:rgba(white,0.9);
+    border-left:1px solid aqua;
+    position: relative;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+
+      &::before {
+  		content: attr(tl-title);
+  		position: absolute;
+  		left: 1em;
+  		font-weight: bold;
+  		top: 1.25em;
+  		display: block;
+  		font-weight: 700;
+  		font-size: .75rem;
+  	}
+
+  	&::after {
+  		width: 10px;
+  		height: 10px;
+  		display: block;
+  		top: 1em;
+  		position: absolute;
+  		left: -5.56px;
+  		border-radius: 10px;
+  		content: '';
+  		border: 1px solid aqua;
+  		background: #004d40;
+  	}
+
+  }
+
+}
+
+/* -- skill stack animation -- */
+.skill-cloud {
+  transition:all 1.5s ease-in;
+}
+
+.skill-cloud:hover {
+  transform: scale(1.5) rotate(360deg);
+}
+
+/* -- social icons -- */
+
+.social-ico {
+  width:32px;
+  height:32px;
+}
+
+.social-ico:hover {
+  webkit-filter: drop-shadow(8px 8px 10px rebeccapurple);
+  filter: drop-shadow(1px 1px 1px rebeccapurple);
+}
+
+
+/* -- media queries -- */
+
+
+/* Larger than mobile screen */
+@media (min-width: 80.0rem) {
+
 }

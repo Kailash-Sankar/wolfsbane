@@ -215,7 +215,7 @@ html.js,
 .menu-button::before,
 .menu-button::after,
 .menu-button span {
-	background: #5f656f;
+	background: snow;
 }
 
 .menu-button::before,
@@ -280,6 +280,7 @@ html.js,
 		max-width: 100%;
 		max-height: 50vh;
 		margin: 0 0 0 50%;
+		margin:auto;
 	}
 	.pages-nav__item {
 		width: 50%;
@@ -315,7 +316,7 @@ html.js,
 	}
 	.menu-button {
 		top: 15px;
-		right: 10px;
+		right: 15px;
 		left: auto;
 	}
 	.info {
