@@ -96,7 +96,7 @@
 	function initEvents() {
 		// menu button click
 		menuCtrl.addEventListener('click', toggleMenu);
-	
+
 		// navigation menu clicks
 		navItems.forEach(function(item) {
 			// which page to open?
