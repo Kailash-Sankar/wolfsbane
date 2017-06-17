@@ -24,7 +24,8 @@ body {
   cursor: pointer; }
   .intro .title {
     font-size: 70px !important;
-    font-family: 'VT323', monospace; }
+    font-family: 'VT323', monospace;
+    color: aqua !important; }
   .intro .sub-title {
     font-size: 18px; }
 
@@ -33,36 +34,35 @@ body {
 
 a {
   text-decoration: none;
-  color: #5c5edc;
+  color: ivory;
   outline: none; }
 
 a:hover {
-  color: #fff; }
+  color: aqua; }
 
 /* -- page styles -- */
-.page .header {
-  padding: 6em 10vw 2em;
-  color: #fff; }
-
-.page .title {
-  font-size: 2.125em;
-  font-weight: 700;
-  line-height: 1.3;
-  margin: 0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: aqua;
-  font-family: 'VT323', monospace; }
-
-.page .desc {
-  font-size: 0.95em;
-  margin: 0.5em 0 1em;
-  padding: 0;
+.page {
   font-family: 'Nunito', sans-serif; }
-
-.page .info {
-  font-family: 'Nunito', sans-serif;
-  text-align: justify; }
+  .page .header {
+    padding: 6em 10vw 2em;
+    color: #fff; }
+  .page .title {
+    font-size: 3.8em;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #0b0e0e;
+    font-family: 'VT323', monospace; }
+  .page .desc {
+    font-size: 0.95em;
+    margin: 0.5em 0 1em;
+    padding: 0;
+    font-family: 'Nunito', sans-serif; }
+  .page .info {
+    font-family: 'Nunito', sans-serif;
+    text-align: justify; }
 
 @media screen and (max-width: 40em) {
   .page {
@@ -74,7 +74,7 @@ a:hover {
 
 /* -- custom page colors -- */
 #page-skills {
-  background-color: #FF6F00; }
+  background-color: #FF9800; }
 
 #page-experiance {
   background-color: #004d40; }
@@ -88,6 +88,9 @@ a:hover {
 #page-about {
   background-color: teal; }
 
+#page-site {
+  background-color: peru; }
+
 /* -- experiance timeline -- */
 .timeline {
   margin: 2px auto; }
@@ -100,6 +103,11 @@ a:hover {
       font-size: 2rem; }
     .timeline .tl-item p {
       font-size: 1rem; }
+    .timeline .tl-item p.tl-sub-title {
+      margin-top: -1.6em;
+      margin-bottom: 1em; }
+    .timeline .tl-item p.tl-description {
+      margin-bottom: 0.5em; }
     .timeline .tl-item::before {
       content: attr(tl-title);
       position: absolute;
@@ -136,6 +144,69 @@ a:hover {
 .social-ico:hover {
   webkit-filter: drop-shadow(8px 8px 10px rebeccapurple);
   filter: drop-shadow(1px 1px 1px rebeccapurple); }
+
+/* -- text effects -- */
+.funky-txt {
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 2px;
+  text-shadow: -3px 0 0 rgba(233, 30, 99, 0.7), 3px 0 0 rgba(123, 65, 216, 0.7);
+  animation: flicker 0.15s linear infinite; }
+
+@keyframes flicker {
+  0% {
+    text-shadow: -3px 0 0 rgba(233, 30, 99, 0.7), 3px 0 0 rgba(123, 65, 216, 0.7); }
+  100% {
+    text-shadow: 0px 0 0 rgba(255, 0, 0, 0.7), 0px 0 0 rgba(0, 255, 255, 0.7); } }
+
+/* -- project text -- */
+.project-title {
+  margin: 10px 0px;
+  font-size: 2em;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  transition: all 0.8s ease-in;
+  cursor: pointer; }
+
+.project-subtitle {
+  font-size: 1em;
+  margin-bottom: 6px;
+  margin-top: -9px; }
+
+.project-desc {
+  font-size: 1.15em;
+  margin-bottom: 20px; }
+
+.project-desc:after {
+  content: '';
+  width: 10px;
+  height: 1px;
+  background-color: #eee;
+  position: relative; }
+
+.project-link {
+  border-bottom: 1px solid rgba(255, 250, 250, 0.3);
+  width: 100px;
+  margin: auto;
+  margin-bottom: 40px;
+  text-align: center; }
+
+#page-projects .column {
+  transition: all 0.4s ease-in; }
+
+#page-projects .column:hover {
+  background-color: crimson; }
+
+#page-projects .column:hover .project-title {
+  text-shadow: -4px 4px 0px #00e6e6, -8px 8px 0px #01cccc, -12px 12px 0px #00bdbd;
+  color: black; }
+
+/* -- site info -- */
+.header-li {
+  list-style: none; }
+  .header-li span {
+    border-bottom: 1px solid #795548; }
 
 /* -- media queries -- */
 /* Larger than mobile screen */
