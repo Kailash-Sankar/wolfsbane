@@ -1,0 +1,19 @@
+<div class="filters-co">
+  <h6> Tags </h6>
+  {% set tags =  getTags() %}
+  <ul>
+    {% for tag in tags %}
+      <li> <a href="{{ tagUrl(tag) }}">{{ tag }}</a> </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="filters-co">
+  <h6> Categories </h6>
+  {% set cats =  getCategories() %}
+  <ul>
+    {% for cat in cats %}
+      <li> <a href="{{ categoryUrl(cat) }}">{{ cat }}</a> </li>
+    {% endfor %}
+  </ul>
+</div>

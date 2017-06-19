@@ -1,0 +1,12 @@
+{% extends "_blog_wrapper.html" %}
+
+{% block content %}
+  <div class="post">
+    <h2 class="title">
+      {{ post.title }}
+    </h2>
+    <div class="content">
+      {{ post.content | safe }}
+    </div>
+  </div>
+{% endblock %}

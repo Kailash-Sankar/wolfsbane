@@ -1,7 +1,8 @@
 var express = require('express'),
     app = express(),
     engines = require('consolidate'),
-    sassMiddleware = require('node-sass-middleware');
+    sassMiddleware = require('node-sass-middleware'),
+    Poet = require('poet');
 
 app.engine('html', engines.nunjucks);
 app.set('view engine', 'html');
@@ -17,7 +18,6 @@ app.use(sassMiddleware({
     //outputStyle: 'compressed',
     prefix:  '/css'  // Where prefix is at <link rel="stylesheets" href="prefix/style.css"/>
 }));
-
 
 app.use(express.static('public'));
 
@@ -36,7 +36,21 @@ app.get('/home', function(req, res, next) {
     res.render('home.html', { });
 });
 
+app.get('/blog', function(req, res, next) {
+    res.render('posts.html', { });
+});
+
 app.use(errorHandler);
+
+var poet = Poet(app, {
+    posts: './_posts/',
+    postsPerPage: 5,
+    metaFormat: 'json'
+});
+
+poet.init().then(function () {
+    // ready to go!
+});
 
 var server = app.listen(port, function() {
     var port = server.address().port;

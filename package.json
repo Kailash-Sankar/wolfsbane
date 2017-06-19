@@ -18,6 +18,7 @@
     "express": "^4.15.2",
     "node-sass": "^4.5.2",
     "node-sass-middleware": "^0.11.0",
-    "nunjucks": "^3.0.0"
+    "nunjucks": "^3.0.0",
+    "poet": "^2.0.2"
   }
 }

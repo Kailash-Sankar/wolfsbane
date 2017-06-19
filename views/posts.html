@@ -1,0 +1,21 @@
+{% extends "_blog_wrapper.html" %}
+
+{% set posts = getPosts(0,5) %}
+
+{% block content %}
+  <div class="row">
+
+    <div class="column column-75">
+      <div class="blog-main">
+        {% for post in posts %}
+          {% include 'partials/post_preview.html' %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="column column-25 blog-side-bar">
+      {% include 'partials/side_bar.html' %}
+    </div>
+
+  </div>
+{% endblock %}

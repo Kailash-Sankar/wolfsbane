@@ -5,5 +5,27 @@
 				<p class="info">
 					My blog was earlier on perl catalyst and it was super heavy on server resources. I'm working on a node markdown based blog. I'll have it up here once it's done.
 				</p>
+
+				{% set posts = getPosts(0,5) %}
+
+
+				  <div class="row">
+
+				    <div class="column column-75">
+				      <div class="blog-main">
+				        {% for post in posts %}
+				          {% include 'partials/post_preview.html' %}
+				        {% endfor %}
+				      </div>
+				    </div>
+
+				    <div class="column column-25">
+				      side bar?
+				    </div>
+
+				  </div>
+
+
+
 			</header>
 </div>
