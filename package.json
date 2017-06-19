@@ -1,6 +1,6 @@
 {
   "name": "wolfsbane",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Personal portfolio",
   "main": "index.js",
   "scripts": {
