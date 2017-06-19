@@ -37,7 +37,7 @@ app.get('/home', function(req, res, next) {
 });
 
 app.get('/blog', function(req, res, next) {
-    res.render('posts.html', { });
+    res.render('blog.html', { });
 });
 
 app.use(errorHandler);
@@ -48,7 +48,9 @@ var poet = Poet(app, {
     metaFormat: 'json'
 });
 
-poet.init().then(function () {
+poet.watch(function () {
+  // watcher reloaded
+}).init().then(function () {
     // ready to go!
 });
 

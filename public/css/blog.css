@@ -5,10 +5,33 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.main-link {
+  color: #F0F3F4; }
+
 .blog-side-bar {
   border-left: 1px solid aqua; }
   .blog-side-bar .filters-co h6 {
     margin-bottom: 0.5em; }
+
+.blog-pagination {
+  margin-top: 2em; }
+  .blog-pagination ul.pagination {
+    list-style: none; }
+    .blog-pagination ul.pagination li {
+      display: inline-block; }
+
+.page-btn {
+  font-size: .8rem;
+  height: 1.8rem;
+  line-height: 1.6rem;
+  padding: 0 0.5rem; }
+
+.page-btn:hover {
+  background-color: #212F3D; }
+
+.active .page-btn {
+  background-color: #212F3D;
+  color: aqua; }
 
 .blog-title {
   border-bottom: 1px solid aqua;
@@ -28,5 +51,20 @@ body {
 
 .post .title {
   border-bottom: 1px solid rgba(0, 255, 255, 0.14);
-  color: #6640ab;
-  text-shadow: 2px 2px 2px rgba(125, 82, 204, 0.89), 5px 5px 5px rgba(96, 38, 204, 0.73); }
+  color: #9b4dca;
+  text-shadow: 2px 2px 2px rgba(119, 63, 152, 0.78), 5px 5px 5px rgba(111, 49, 148, 0.7); }
+
+.post h6 {
+  margin-top: 2em;
+  margin-bottom: 0.5em; }
+
+.post p {
+  margin-bottom: 0.5em; }
+
+.post ol, .post ul {
+  margin-bottom: 0.5em; }
+
+/* -- media queries -- */
+@media (max-width: 40rem) {
+  .blog-side-bar {
+    border-left: 0px solid aqua; } }

@@ -1,6 +1,7 @@
 {% extends "_blog_wrapper.html" %}
 
 {% set posts = getPosts(0,5) %}
+{% set page  = 1 %}
 
 {% block content %}
   <div class="row">
@@ -17,5 +18,10 @@
       {% include 'partials/side_bar.html' %}
     </div>
 
+  </div>
+  <div class="row blog-pagination">
+    <div class="column">
+      {% include 'partials/pagination.html' %}
+    </div>
   </div>
 {% endblock %}

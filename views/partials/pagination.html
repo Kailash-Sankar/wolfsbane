@@ -1,0 +1,16 @@
+{% set pageCount = getPageCount() %}
+
+{% if pageCount > 1 %}
+  <ul class="pagination">
+    {% for i in range(1, pageCount+1) -%}
+      {% if page == i %}
+        <li class="active">
+          <a class="button page-btn" href="{{ pageURL(i) }}">{{ i }}</a>
+        </li>
+        {% else %}
+        <li class="">
+          <a class="button page-btn" href="{{ pageURL(i) }}">{{ i }}</a>
+        </li>
+        {% endif %}
+    {%- endfor %}
+{% endif %}
