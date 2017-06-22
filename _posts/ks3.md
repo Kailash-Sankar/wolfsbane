@@ -1,7 +1,7 @@
 
 {{{
   "title": "Knowledge Stream #3",
-  "tags": ["Tech","Security","Crypto"],
+  "tags": ["Tech","Crypto"],
   "category": "Knowledge Streams",
   "date": "15  Jan 2016",
   "preview": "This knowledge stream looks at big data, botnets, blockchain, AI, 8 Queens, HaLoW and pomodoro."

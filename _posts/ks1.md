@@ -1,7 +1,7 @@
 
 {{{
   "title": "Knowledge Stream #1",
-  "tags": ["Tech","Security"],
+  "tags": ["Tech","Security","UI"],
   "category": "Knowledge Streams",
   "date": "15 Nov 2015",
   "preview": "This knowledge stream looks at free https certificates, passwords, UI design trends, D-H key exchange, personal development and drones."

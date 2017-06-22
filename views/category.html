@@ -1,0 +1,32 @@
+{% extends "_blog_wrapper.html" %}
+
+{% block content %}
+<div class="row blog-header">
+  <div class="column">
+    <h3 class="title">{{ category }}</h3>
+  </div>
+</div>
+
+  <div class="row">
+    <div class="column column-75">
+      <div class="blog-main">
+        {% for post in posts %}
+          {% include 'partials/post_preview.html' %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="column column-25 blog-side-bar">
+      {% include 'partials/side_bar.html' %}
+    </div>
+
+  </div>
+
+<!--   <div class="row blog-pagination">
+    <div class="column">
+      {% include 'partials/pagination.html' %}
+    </div>
+  </div>
+-->
+
+{% endblock %}

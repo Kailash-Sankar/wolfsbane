@@ -58,3 +58,31 @@ var server = app.listen(port, function() {
     var port = server.address().port;
     console.log('Express server listening on port %s.', port);
 });
+
+
+/* -- poet enh -- */
+
+// finds the page in which a post belongs to
+// expects post slug as identifier
+poet.helpers.getPostPage = function(slug) {
+    var postsPerPage = poet.options.postsPerPage;
+    var pageCount = poet.helpers.getPageCount();
+
+    // iterate each page
+    for(var i=1; i <= pageCount; i++) {
+        var from = (i-1) * postsPerPage;
+        var to = from + postsPerPage;
+        // get posts in a page
+        var posts = poet.helpers.getPosts(from, to);
+
+        // look for the slug
+        if ( posts.find(p => p.slug === slug) ) {
+          return i;
+        }
+    }
+
+    //not found
+    return 0;
+};
+
+app.locals.getPostPage = poet.helpers.getPostPage;
