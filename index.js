@@ -29,10 +29,6 @@ function errorHandler(err, req, res, next) {
 }
 
 app.get('/', function(req, res, next) {
-    res.render('landing.html', { });
-});
-
-app.get('/home', function(req, res, next) {
     res.render('home.html', { });
 });
 

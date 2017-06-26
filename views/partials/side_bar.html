@@ -3,7 +3,7 @@
   {% set tags =  getTags() %}
   <ul>
     {% for tag in tags %}
-      <li> <a href="{{ tagUrl(tag) }}">{{ tag }}</a> </li>
+      <li> <a class="button button-outline tag-btn" href="{{ tagUrl(tag) }}">{{ tag }}</a> </li>
     {% endfor %}
   </ul>
 </div>
@@ -13,7 +13,7 @@
   {% set cats =  getCategories() %}
   <ul>
     {% for cat in cats %}
-      <li> <a href="{{ categoryUrl(cat) }}">{{ cat }}</a> </li>
+      <li> <a class="button button-outline tag-btn" href="{{ categoryUrl(cat) }}">{{ cat }}</a> </li>
     {% endfor %}
   </ul>
 </div>

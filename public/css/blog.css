@@ -20,12 +20,12 @@ body {
   .blog-side-bar .filters-co h6 {
     margin-bottom: 0.5em; }
   .blog-side-bar .filters-co ul li {
-    border: 1px solid #0b5fa2;
-    padding: 2px 4px;
-    display: inline-block;
-    border-radius: 3px; }
-    .blog-side-bar .filters-co ul li a {
-      color: #03A9F4; }
+    display: inline-block; }
+    .blog-side-bar .filters-co ul li a.x {
+      border: 1px solid #0b5fa2;
+      padding: 2px 4px;
+      display: inline-block;
+      border-radius: 3px; }
 
 .blog-pagination {
   margin-top: 2em; }
@@ -55,7 +55,7 @@ body {
     margin-top: -1.5em;
     margin-bottom: 1.5em;
     visibility: hidden;
-    color: #9b4dca; }
+    color: #03A9F4; }
   .post-entry .post-preview p {
     margin-bottom: 1em; }
   .post-entry .post-preview .poet-read-more {
@@ -76,7 +76,7 @@ body {
 .post .info {
   margin-top: -2.3em;
   font-size: 0.8rem;
-  color: #9b4dca; }
+  color: #03A9F4; }
 
 .post .content {
   padding-top: 1.5em; }
@@ -138,7 +138,13 @@ body {
   height: 1.4rem;
   line-height: 1.3rem;
   padding: 0 .5rem;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  color: #03A9F4;
+  border: 0.1rem solid #0174a9;
+  margin-bottom: 0rem; }
+
+.button.button-outline {
+  color: #03A9F4; }
 
 /* -- media queries -- */
 @media (max-width: 40rem) {

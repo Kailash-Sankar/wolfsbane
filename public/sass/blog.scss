@@ -42,13 +42,12 @@ body {
     }
 
     ul li {
-      border: 1px solid #0b5fa2;
-      padding: 2px 4px;
-      display: inline-block;
-      border-radius: 3px;
-
-      a {
-        color:#03A9F4;
+      display:inline-block;
+      a.x {
+        border: 1px solid #0b5fa2;
+        padding: 2px 4px;
+        display: inline-block;
+        border-radius: 3px;
       }
     }
   }
@@ -90,7 +89,7 @@ body {
     margin-top: -1.5em;
     margin-bottom: 1.5em;
     visibility: hidden;
-    color: rgb(155, 77, 202);
+    color: $lc_sec;
   }
 
   .post-preview {
@@ -128,7 +127,7 @@ body {
   .info {
     margin-top: -2.3em;
     font-size: 0.8rem;
-    color: rgb(155, 77, 202);
+    color: $lc_sec;
   }
 
   .content {
@@ -207,6 +206,13 @@ body {
   line-height: 1.3rem;
   padding: 0 .5rem;
   text-transform: capitalize;
+  color: $lc_sec;
+  border: 0.1rem solid #0174a9;
+  margin-bottom: 0rem;
+}
+
+.button.button-outline {
+  color: $lc_sec;
 }
 
 /* -- media queries -- */
