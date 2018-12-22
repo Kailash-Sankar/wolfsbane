@@ -14,7 +14,7 @@ app.use(sassMiddleware({
     /* Options */
     src: __dirname + '/public/sass',
     dest: __dirname + '/public/css',
-    debug: true,
+    debug: false,
     //outputStyle: 'compressed',
     prefix:  '/css'  // Where prefix is at <link rel="stylesheets" href="prefix/style.css"/>
 }));

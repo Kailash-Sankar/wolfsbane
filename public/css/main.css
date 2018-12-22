@@ -15,11 +15,12 @@
 /* -- table -- */
 table {
   border-spacing: 0;
-  width: 100%; }
+  width: 100%;
+  color: whitesmoke; }
 
 td,
 th {
-  border-bottom: 0.1rem solid rgba(53, 53, 53, 0.37);
+  border-bottom: 0.1rem solid #0c9c27;
   padding: 1.2rem 1.5rem;
   text-align: left; }
 
