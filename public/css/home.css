@@ -8,7 +8,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #141720;
+  background-color: #0e0d0d;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -23,9 +23,6 @@ body {
   cursor: pointer;
   width: 30em; }
   .intro .title {
-    /* font-size:70px !important;
-      color:aqua !important;
-    */
     font-family: 'VT323', monospace; }
   .intro .sub-title {
     font-size: 18px; }

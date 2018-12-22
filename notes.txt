@@ -1,1 +1,26 @@
-SASS,  HTML, CSS, Angular.js, Node.js, Perl, Catalyst, CGI, MongoDB, MYSQL, MSSQL, Python, Django, Javascript, OOjs, HAML,  Nunjucks, Bootstrap, Material Design Lite, Bottle
+// meta for skill cloud
+
+5	Javascript
+5	Python
+4	Node.js
+4	Perl
+3	Elasticsearch
+3	Cassandra
+3	Django
+3	MSSQL
+3	MYSQL
+3	CSS
+2	MongoDB
+2	Redis
+1	Angular.js
+1	Bootstrap
+1	Nunjucks
+1	Catalyst
+1	Bottle
+1	Flask
+1	HAML
+1	OOjs
+1	HTML
+1	SASS
+1	MDL
+1	CGI
