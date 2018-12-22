@@ -26,11 +26,12 @@ $black : #333;
 table {
   border-spacing: 0;
   width: 100%;
+  color: whitesmoke;
 }
 
 td,
 th {
-  border-bottom: 0.1rem solid rgba(53, 53, 53, 0.37);
+  border-bottom: 0.1rem solid rgb(12, 156, 39);
   padding: 1.2rem 1.5rem;
   text-align: left;
 }

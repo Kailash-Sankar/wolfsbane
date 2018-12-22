@@ -24,11 +24,13 @@ body {
   text-align: center;
   z-index:99;
   cursor: pointer;
+  width:30em;
 
   .title {
-    font-size:70px !important;
+    /* font-size:70px !important;
+      color:aqua !important;
+    */
     font-family: 'VT323', monospace;
-    color:aqua !important;
   }
 
   .sub-title {
@@ -57,7 +59,7 @@ a:hover {
 
   .header {
     padding: 6em 10vw 2em;
-    color: #fff;
+    color: whitesmoke;
   }
 
   .title {
@@ -94,33 +96,38 @@ a:hover {
     .title {
       font-size: 1.8em;
     }
+    .console {
+      font-size: 1em;
+    }
   }
 }
 
 
-/* -- custom page colors -- */
+/* -- custom page colors --
+  simplifed to a single one as part of yearly redesign
+*/
 #page-skills {
-  background-color: #FF9800;
+  background-color: #242424;
 }
 
 #page-experience {
-  background-color: #004d40;
+  background-color: #242424;
 }
 
 #page-blog {
-  background-color: darkslategrey;
+  background-color: #242424;
 }
 
 #page-projects {
-  background-color: palevioletred;
+  background-color: #242424;
 }
 
 #page-about {
-  background-color: teal;
+  background-color: #242424;
 }
 
 #page-site {
-  background-color:peru;
+  background-color: #242424;
 }
 
 
@@ -223,6 +230,37 @@ a:hover {
   }
 }
 
+.flow-txt {
+  position:relative;
+  background-image: -webkit-linear-gradient(#333 50%, #00da29 50%);
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: 100% 2px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: stripes 2s linear infinite;
+  animation: stripes 2s linear infinite;
+  white-space: nowrap;
+  text-transform: uppercase;
+  display:inline-block;
+}
+
+@keyframes stripes {
+  100% {
+    background-position: 0 -50px;
+  }
+}
+
+.console {
+  font-size: 2.5em;
+  color: #00da29;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  0% { opacity: 1}
+  100% { opacity : 0}
+}
 
 /* -- project text -- */
 
@@ -231,7 +269,7 @@ a:hover {
   font-size: 2em;
   font-weight:600;
   border-bottom: 1px solid #eee;
-  transition:all 0.8s ease-in;
+  transition:all 0.4s ease-in;
   cursor:pointer;
 }
 
@@ -267,12 +305,12 @@ a:hover {
 }
 
 #page-projects .column:hover {
-    background-color: crimson;
+    background-color: #000;
 }
 
 #page-projects .column:hover .project-title {
-  text-shadow: -4px 4px 0px #00e6e6, -8px 8px 0px #01cccc, -12px 12px 0px #00bdbd;
-  color:black;
+  text-shadow: -2px 2px 1px #00da29;
+  color: #0f8c26;
 }
 
 /* -- site info -- */

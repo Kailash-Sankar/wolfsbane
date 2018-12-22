@@ -20,11 +20,13 @@ body {
   padding: 20px;
   text-align: center;
   z-index: 99;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 30em; }
   .intro .title {
-    font-size: 70px !important;
-    font-family: 'VT323', monospace;
-    color: aqua !important; }
+    /* font-size:70px !important;
+      color:aqua !important;
+    */
+    font-family: 'VT323', monospace; }
   .intro .sub-title {
     font-size: 18px; }
 
@@ -44,7 +46,7 @@ a:hover {
   font-family: 'Nunito', sans-serif; }
   .page .header {
     padding: 6em 10vw 2em;
-    color: #fff; }
+    color: whitesmoke; }
   .page .title {
     font-size: 3.8em;
     font-weight: 700;
@@ -69,26 +71,30 @@ a:hover {
     .page .header {
       padding: 50px 20px 1em; }
     .page .title {
-      font-size: 1.8em; } }
+      font-size: 1.8em; }
+    .page .console {
+      font-size: 1em; } }
 
-/* -- custom page colors -- */
+/* -- custom page colors --
+  simplifed to a single one as part of yearly redesign
+*/
 #page-skills {
-  background-color: #FF9800; }
+  background-color: #242424; }
 
 #page-experience {
-  background-color: #004d40; }
+  background-color: #242424; }
 
 #page-blog {
-  background-color: darkslategrey; }
+  background-color: #242424; }
 
 #page-projects {
-  background-color: palevioletred; }
+  background-color: #242424; }
 
 #page-about {
-  background-color: teal; }
+  background-color: #242424; }
 
 #page-site {
-  background-color: peru; }
+  background-color: #242424; }
 
 /* -- experiance timeline -- */
 .timeline {
@@ -160,13 +166,42 @@ a:hover {
   100% {
     text-shadow: 0px 0 0 rgba(255, 0, 0, 0.7), 0px 0 0 rgba(0, 255, 255, 0.7); } }
 
+.flow-txt {
+  position: relative;
+  background-image: -webkit-linear-gradient(#333 50%, #00da29 50%);
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: 100% 2px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-animation: stripes 2s linear infinite;
+  animation: stripes 2s linear infinite;
+  white-space: nowrap;
+  text-transform: uppercase;
+  display: inline-block; }
+
+@keyframes stripes {
+  100% {
+    background-position: 0 -50px; } }
+
+.console {
+  font-size: 2.5em;
+  color: #00da29;
+  animation: blinker 1s linear infinite; }
+
+@keyframes blinker {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
 /* -- project text -- */
 .project-title {
   margin: 10px 0px;
   font-size: 2em;
   font-weight: 600;
   border-bottom: 1px solid #eee;
-  transition: all 0.8s ease-in;
+  transition: all 0.4s ease-in;
   cursor: pointer; }
 
 .project-subtitle {
@@ -196,11 +231,11 @@ a:hover {
   transition: all 0.4s ease-in; }
 
 #page-projects .column:hover {
-  background-color: crimson; }
+  background-color: #000; }
 
 #page-projects .column:hover .project-title {
-  text-shadow: -4px 4px 0px #00e6e6, -8px 8px 0px #01cccc, -12px 12px 0px #00bdbd;
-  color: black; }
+  text-shadow: -2px 2px 1px #00da29;
+  color: #0f8c26; }
 
 /* -- site info -- */
 .header-li {
