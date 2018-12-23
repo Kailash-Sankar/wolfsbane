@@ -1,0 +1,122 @@
+.our-canvas {
+  background-image: url('/images/bliss.jpg');
+  /*background-position: center bottom;*/
+  position:absolute;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  z-index:1;
+  font-family: 'Great Vibes', cursive;
+  background-size:cover;
+}
+
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #d9958c;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-size:3em;
+}
+
+.main-title::before {
+	content: '';
+	width: 20vw;
+	height: 20vw;
+	min-width: 7em;
+	min-height: 7em;
+	background: url('/images/deco.svg') no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+	z-index: 1;
+	-webkit-transform: translate3d(-50%,-50%,0) rotate(1080deg);
+	transform: translate3d(-50%,-50%,0) rotate(1080deg);
+  animation: spin 10s linear infinite;
+}
+
+.heart {
+  color:tomato;
+  transition: all 1s ease-in;
+  cursor:pointer;
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-40%,0);
+  text-shadow: none;
+  animation: beat 1s linear infinite;
+}
+
+@keyframes beat {
+  0% { transform: translate3d(-50%,-40%,0) scale(1); }
+  50% { transform: translate3d(-50%,-40%,0) scale(1.25);}
+  100% { transform: translate3d(-50%,-40%,0) scale(1); }
+}
+
+@keyframes spin {
+  0% { transform: translate3d(-50%,-50%,0) rotate(0deg); }
+  100% { transform: translate3d(-50%,-50%,0) rotate(360deg); }
+}
+
+.invite {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%,0);
+  width:50em;
+  height:30em;
+  background-color: #01212ee6;
+  z-index:99;
+  border: solid 1px #388e71;
+  color:#d8b9bc;
+}
+
+.invite .header {
+  font-size:3em;
+  text-align:center;
+  border-bottom: solid 1px #388e71;
+  padding: 0.3em;
+  background-color: #001624;
+  cursor:pointer;
+}
+
+.invite .content {
+  font-family: 'Nunito', sans-serif;
+  padding: 0.3em;
+  text-align: center;
+  font-size:1.5em;
+}
+
+.content span.sec {
+  display: block;
+  font-size:1.8em;
+  font-weigh:600;
+  text-decoration: underline solid #388e71;
+}
+
+.content span.foot {
+  display: block;
+  font-size:0.6em;
+  padding-top:20px;
+}
+
+.nav {
+  float:right;
+  display:inline-block;
+  color:#d8b9bc;
+  font-size:2em;
+}
+
+/*
+#6c6c6c
+#f9f1e9;
+*/

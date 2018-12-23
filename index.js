@@ -36,6 +36,10 @@ app.get('/blog', function(req, res, next) {
     res.render('blog.html', { });
 });
 
+app.get('/savethedate', function(req, res, next) {
+    res.render('special/save_the_date.html', { });
+});
+
 app.use(errorHandler);
 
 var poet = Poet(app, {
