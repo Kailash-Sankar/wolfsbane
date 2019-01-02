@@ -38,3 +38,7 @@ $('#heart').on('click',function(){
 $('.invite .header').on('click', function(){
   $('.invite').fadeOut("slow");
 })
+
+
+$('#help').fadeIn(1500);
+setTimeout(function() {$('#help').fadeOut("slow");},5000)

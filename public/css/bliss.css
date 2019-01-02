@@ -101,6 +101,7 @@
   font-size:1.8em;
   font-weigh:600;
   text-decoration: underline solid #388e71;
+  padding:10px 0px 5px 0px;
 }
 
 .content span.foot {
@@ -114,6 +115,19 @@
   display:inline-block;
   color:#d8b9bc;
   font-size:2em;
+  margin:5px;
+}
+
+.footer {
+  position:absolute;
+  bottom:1%;
+  left:50%;
+  transform: translateX(-50%);
+  color:#d8b9bc;
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.65em;
+  font-style: italic;
 }
 
 /*
