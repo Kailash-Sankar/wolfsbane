@@ -23,6 +23,11 @@
   letter-spacing: 1px;
   font-weight: normal;
   font-size:3em;
+  text-shadow:
+ -1px -1px 0 #333,
+  1px -1px 0 #333,
+  -1px 1px 0 #333,
+   1px 1px 0 #333;
 }
 
 .main-title::before {
